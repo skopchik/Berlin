@@ -14,11 +14,12 @@ a {
 .header-navbar {
   display: flex;
   padding-top: 27px;
-  margin-left: 230px;
-  margin-right: 230px;
-  justify-content: space-between;
+  justify-content: center;
 }
 
+.header-logo {
+  margin-right: 791px;
+}
 .navbar-wrap {
   width: inherit;
   display: flex;
