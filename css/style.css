@@ -165,8 +165,7 @@ a {
 }
 
 .analytics-images-wrap {
-  /*  */
-  margin-right: 156px;
+  margin-right: 120px;
 }
 
 .analytics-wrap {
@@ -177,8 +176,7 @@ a {
 }
 
 .activity-images-wrap {
-  /*  */
-  margin-left: 86px;
+  margin-left: 60px;
 }
 
 .image-section {
@@ -254,6 +252,7 @@ a {
   border: none;
   background-color: inherit;
 }
+
 .plan-to-start-cards {
   display: flex;
 }
@@ -312,7 +311,7 @@ a {
 }
 
 .card-list {
-  list-style-image: url(/images/marker.png);
+  list-style-image: url(../images/marker.png);
   margin-bottom: 31px;
   padding-left: 25px;
 }
@@ -336,6 +335,7 @@ a {
 .card-button {
   margin-bottom: 14px;
 }
+
 .card-remark {
   font-weight: 400;
   font-size: 14px;
@@ -343,6 +343,96 @@ a {
   color: #666666;
 }
 
+.plan-to-start-customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.customers-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #878b90;
+  margin-bottom: 41px;
+}
+
+.customer-logo:not(:last-child) {
+  margin-right: 51px;
+}
+
+.testimonials-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 101px;
+}
+
+.testimonial {
+  padding-left: 48px;
+  padding-right: 48px;
+
+  /*  padding-top: 0;
+  padding-bottom: 0; */
+  border: 1px solid #e8e8ea;
+
+  height: 405px;
+  max-width: 376px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial:not(:last-child) {
+  border-right: none;
+}
+.testimonial:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.testimonial:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.testimonial-quotes {
+  font-weight: 400;
+  font-size: 98px;
+  line-height: 119px;
+  color: #dbe4f1;
+}
+
+.testimonial-text {
+  height: 160px;
+  max-width: 274px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  letter-spacing: -0.1px;
+  margin-bottom: 40px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+.testimonial-author-info {
+  margin-left: 21px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: -0.3px;
+  color: #323232;
+  line-height: 28px;
+}
+
+.testimonial-author-name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.testimonial-author-address {
+  font-weight: 400;
+  font-size: 14px;
+}
 .footer {
   color: #ffffff;
   height: 432px;
