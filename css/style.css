@@ -141,6 +141,7 @@ a {
 }
 
 .button-section {
+  text-align: center;
   background-color: rgba(56, 180, 152, 0.2);
 }
 
@@ -231,10 +232,6 @@ a {
 }
 
 .plan-to-start-title {
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 50px;
-  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -433,6 +430,90 @@ a {
   font-weight: 400;
   font-size: 14px;
 }
+
+.manage-your-team-section {
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.manage-your-team-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  color: #000000;
+  margin-right: 61px;
+}
+
+.request-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*   justify-content: center; */
+  /*   margin-bottom: 120px; */
+  background: url("../images/BG_3.jpg") bottom / cover no-repeat;
+  background-size: 100% 514px;
+  padding-bottom: 120px;
+}
+
+.request-section-title {
+  margin-bottom: 30px;
+}
+.request-section-form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e8e8ea;
+  box-shadow: 0px 22px 54px rgba(67, 87, 138, 0.29);
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.request-section-form input {
+  min-width: 458px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #323232;
+  border: 1px solid #e8e8ea;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+::-webkit-input-placeholder {
+  color: #323232;
+}
+::-moz-placeholder {
+  color: #323232;
+} /* Firefox 19+ */
+:-moz-placeholder {
+  color: #323232;
+} /* Firefox 18- */
+:-ms-input-placeholder {
+  color: #323232;
+}
+
+.form-attach {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-attach-button {
+  padding: 9px 12px;
+  border: none;
+  background: #f2f5f8;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.3px;
+  color: #323232;
+}
+/*  +++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .footer {
   color: #ffffff;
   height: 432px;
