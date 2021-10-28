@@ -41,7 +41,6 @@ a {
 }
 
 .header-promo {
-  /* !!!!!!!!!!!!!! */
   margin: 0 auto;
   margin-top: 80px;
   max-width: 590px;
@@ -260,15 +259,34 @@ a {
   padding-top: 28px;
   padding-left: 45px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   height: 515px;
   width: 350px;
 }
 
 .plan-to-start-card:first-child {
   margin-right: 30px;
+}
+
+.selected-card-line {
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.plan-to-start-card {
+  position: relative;
+  width: 350px;
+  padding: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 28px;
+  margin-left: 45px;
+  margin-bottom: 35px;
 }
 
 .card-type {
@@ -283,21 +301,27 @@ a {
 .card-price {
   font-weight: bold;
   color: #000000;
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 
 .price-dollar {
+  vertical-align: top;
+  letter-spacing: -1.2px;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 51px;
 }
 .price-number {
+  letter-spacing: -0.3px;
   font-size: 46px;
   line-height: 60px;
 }
+
 .price-period {
+  letter-spacing: -0.3px;
   font-size: 17px;
   line-height: 21px;
 }
+
 .card-description {
   max-width: 240px;
   font-weight: 400;
@@ -368,11 +392,7 @@ a {
 .testimonial {
   padding-left: 48px;
   padding-right: 48px;
-
-  /*  padding-top: 0;
-  padding-bottom: 0; */
   border: 1px solid #e8e8ea;
-
   height: 405px;
   max-width: 376px;
   display: flex;
@@ -412,6 +432,7 @@ a {
   display: flex;
   align-items: center;
 }
+
 .testimonial-author-info {
   margin-left: 21px;
   display: flex;
@@ -450,8 +471,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*   justify-content: center; */
-  /*   margin-bottom: 120px; */
   background: url("../images/BG_3.jpg") bottom / cover no-repeat;
   background-size: 100% 514px;
   padding-bottom: 120px;
@@ -481,15 +500,16 @@ a {
   box-sizing: border-box;
   border-radius: 3px;
 }
+
 ::-webkit-input-placeholder {
   color: #323232;
 }
 ::-moz-placeholder {
   color: #323232;
-} /* Firefox 19+ */
+}
 :-moz-placeholder {
   color: #323232;
-} /* Firefox 18- */
+}
 :-ms-input-placeholder {
   color: #323232;
 }
@@ -513,7 +533,7 @@ a {
   letter-spacing: -0.3px;
   color: #323232;
 }
-/*  +++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .footer {
   color: #ffffff;
   height: 432px;
@@ -569,3 +589,97 @@ a {
 .footer-policy-link:not(:last-child) {
   margin-right: 19px;
 }
+
+/* TOGGLE BUTTON  START */
+:root {
+  --switches-bg-color: #f8fbfe;
+  --switches-label-color: #0f3d33;
+  --switch-bg-color: #50e3c2;
+  --switch-text-color: #0f3d33;
+}
+
+.switches-container {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #0f3d33;
+  width: 250px;
+  height: 46px;
+  line-height: 45px;
+  background: var(--switches-bg-color);
+  display: flex;
+  position: relative;
+  border: 1px solid #e8e8ea;
+  border-radius: 23px;
+}
+
+.switches-container input {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+}
+
+.switches-container label {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  color: var(--switches-label-color);
+}
+
+.switch-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 48%;
+  padding: 0.15rem;
+  z-index: 3;
+  transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.switch {
+  border-radius: 3rem;
+  background: var(--switch-bg-color);
+  height: 100%;
+}
+
+.switch div {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: block;
+  color: var(--switch-text-color);
+  transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
+  will-change: opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.switches-container input:nth-of-type(1):checked ~ .switch-wrapper {
+  transform: translateX(0%);
+}
+
+.switches-container input:nth-of-type(2):checked ~ .switch-wrapper {
+  transform: translateX(100%);
+}
+
+.switches-container
+  input:nth-of-type(1):checked
+  ~ .switch-wrapper
+  .switch
+  div:nth-of-type(1) {
+  opacity: 1;
+}
+
+.switches-container
+  input:nth-of-type(2):checked
+  ~ .switch-wrapper
+  .switch
+  div:nth-of-type(2) {
+  opacity: 1;
+}
+
+/* TOGGLE BUTTON  END */

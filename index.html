@@ -245,57 +245,98 @@
           Wireframes are generally created by business analysts, user experience
           designers, developers, visual designers, and by those with expertise
         </span>
-        <button class="plan-to-start-button">
-          dodelat
-          <img src="./images/toggle-button.png" alt="" />
-        </button>
+
+        <!-- TOGGLE BUTTON START -->
+        <div class="switches-container">
+          <input
+            type="radio"
+            id="switchMonthly"
+            name="switchPlan"
+            value="Monthly"
+            checked="checked"
+          />
+          <input
+            type="radio"
+            id="switchYearly"
+            name="switchPlan"
+            value="Yearly"
+          />
+          <label for="switchMonthly">Monthly</label>
+          <label for="switchYearly">Yearly</label>
+          <div class="switch-wrapper">
+            <div class="switch">
+              <div>Monthly</div>
+              <div>Yearly</div>
+            </div>
+          </div>
+        </div>
+        <!-- TOGGLE BUTTON END -->
 
         <div class="plan-to-start-cards">
           <div class="plan-to-start-card">
-            <span class="card-type"> Basic </span>
-            <div class="card-price">
-              <span class="price-dollar">$</span>
-              <span class="price-number">19</span>
-              <span class="price-period">/ month</span>
-            </div>
+            <div class="card-container">
+              <span class="card-type"> Basic </span>
+              <div class="card-price">
+                <span class="price-dollar">$</span>
+                <span class="price-number">19</span>
+                <span class="price-period">/ month</span>
+              </div>
 
-            <span class="card-description">
-              Good for small business launching their products less then once a
-              year
-            </span>
-            <ul class="card-list">
-              <li class="card-list-item">Unlimited Blocks</li>
-              <li class="card-list-item">5GB Clould Storages</li>
-              <li class="card-list-item basic-card-list-item">
-                Custom Domain Names
-              </li>
-              <li class="card-list-item basic-card-list-item">
-                Unlimited Emails
-              </li>
-            </ul>
-            <button class="card-button button">Start free 14 days trial</button>
-            <span class="card-remark"> No credit card required </span>
+              <span class="card-description">
+                Good for small business launching their products less then once
+                a year
+              </span>
+              <ul class="card-list">
+                <li class="card-list-item">Unlimited Blocks</li>
+                <li class="card-list-item">5GB Clould Storages</li>
+                <li class="card-list-item basic-card-list-item">
+                  Custom Domain Names
+                </li>
+                <li class="card-list-item basic-card-list-item">
+                  Unlimited Emails
+                </li>
+              </ul>
+              <button class="card-button button">
+                Start free 14 days trial
+              </button>
+              <span class="card-remark"> No credit card required </span>
+            </div>
           </div>
           <div class="plan-to-start-card">
-            <span class="card-type"> Pro </span>
-            <div class="card-price">
-              <span class="price-dollar">$</span>
-              <span class="price-number">29</span>
-              <span class="price-period">/ month</span>
-            </div>
+            <div class="card-container">
+              <svg
+                class="selected-card-line"
+                width="350"
+                height="4"
+                viewBox="0 0 350 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="350" height="4" rx="2" fill="#50E3C2" />
+              </svg>
 
-            <span class="card-description">
-              Good for small business launching their products less then once a
-              year
-            </span>
-            <ul class="card-list">
-              <li class="card-list-item">Unlimited Blocks</li>
-              <li class="card-list-item">5GB Clould Storages</li>
-              <li class="card-list-item">Custom Domain Names</li>
-              <li class="card-list-item">Unlimited Emails</li>
-            </ul>
-            <button class="card-button button">Start free 14 days trial</button>
-            <span class="card-remark"> No credit card required </span>
+              <span class="card-type"> Pro </span>
+              <div class="card-price">
+                <span class="price-dollar">$</span>
+                <span class="price-number">29</span>
+                <span class="price-period">/ month</span>
+              </div>
+
+              <span class="card-description">
+                Good for small business launching their products less then once
+                a year
+              </span>
+              <ul class="card-list">
+                <li class="card-list-item">Unlimited Blocks</li>
+                <li class="card-list-item">5GB Clould Storages</li>
+                <li class="card-list-item">Custom Domain Names</li>
+                <li class="card-list-item">Unlimited Emails</li>
+              </ul>
+              <button class="card-button button">
+                Start free 14 days trial
+              </button>
+              <span class="card-remark"> No credit card required </span>
+            </div>
           </div>
         </div>
       </div>
@@ -396,7 +437,6 @@
         >Please leave your request</span
       >
       <div class="request-section-form">
-        <!--   <form name="test" method="post" action="input1.php"> -->
         <input placeholder="First name" type="text" size="40" />
         <input placeholder="Last name" type="text" size="40" />
         <input placeholder="Email" type="email" size="40" />
@@ -423,11 +463,10 @@
             &nbsp;Attach image
           </button>
         </div>
-
         <div class="button button-section">Send</div>
-        <!--   </form> -->
       </div>
     </div>
+
     <div class="footer">
       <div class="footer-container">
         <div class="footer-columns-wrap">
