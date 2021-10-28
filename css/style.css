@@ -219,9 +219,11 @@ a {
 }
 
 .plan-to-start-section {
+  background: url("../images/BG_3.jpg") top / cover no-repeat;
+  background-size: 100% 507px;
   padding-top: 120px;
-  background: #f8fbfe;
 }
+
 .plan-to-start-container {
   display: flex;
   flex-direction: column;
@@ -252,13 +254,99 @@ a {
   border: none;
   background-color: inherit;
 }
+.plan-to-start-cards {
+  display: flex;
+}
+
+.plan-to-start-card {
+  margin-top: 41px;
+  margin-bottom: 85px;
+  padding-top: 28px;
+  padding-left: 45px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 515px;
+  width: 350px;
+}
+
+.plan-to-start-card:first-child {
+  margin-right: 30px;
+}
+
+.card-type {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #878b90;
+  margin-bottom: 17px;
+}
+
+.card-price {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.price-dollar {
+  font-size: 30px;
+  line-height: 36px;
+}
+.price-number {
+  font-size: 46px;
+  line-height: 60px;
+}
+.price-period {
+  font-size: 17px;
+  line-height: 21px;
+}
+.card-description {
+  max-width: 240px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #323232;
+  margin-bottom: 26px;
+}
+
+.card-list {
+  list-style-image: url(/images/marker.png);
+  margin-bottom: 31px;
+  padding-left: 25px;
+}
+
+.card-list-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+}
+
+.card-list-item:not(:last-child) {
+  margin-bottom: 7px;
+}
+
+.basic-card-list-item {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.card-button {
+  margin-bottom: 14px;
+}
+.card-remark {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #666666;
+}
 
 .footer {
   color: #ffffff;
   height: 432px;
-  background: url("../images/BG_3.jpg") center / cover no-repeat;
-}
-.footer-container {
+  background: url("../images/BG_4.jpg") center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,7 +364,7 @@ a {
   flex-direction: column;
 }
 
-.footer-menu-item {
+.footer-menu-item:not(:last-child) {
   margin-bottom: 12px;
 }
 
@@ -288,9 +376,25 @@ a {
 }
 
 .footer-menu-title {
+  display: block;
+  margin-bottom: 23px;
   font-weight: 400;
   font-size: 14px;
   line-height: 32px;
   color: #dbe4f1;
   opacity: 0.7;
+}
+
+.footer-info {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #dbe4f1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-link:not(:last-child),
+.footer-policy-link:not(:last-child) {
+  margin-right: 19px;
 }
