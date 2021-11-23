@@ -197,25 +197,14 @@
             </div>
           </div>
           <div class="plan-to-start-card">
+            <div class="selected-card-line"></div>
             <div class="card-container">
-              <svg
-                class="selected-card-line"
-                width="350"
-                height="4"
-                viewBox="0 0 350 4"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="350" height="4" rx="2" fill="#50E3C2" />
-              </svg>
-
               <span class="card-type"> Pro </span>
               <div class="card-price">
                 <span class="price-dollar">$</span>
                 <span class="price-number">29</span>
                 <span class="price-period">/ month</span>
               </div>
-
               <span class="card-description">
                 Good for small business launching their products less then once
                 a year
@@ -332,33 +321,66 @@
       >
 
       <div class="request-section-form">
-        <input placeholder="First name" type="text" size="40" />
-        <input placeholder="Last name" type="text" size="40" />
-        <input placeholder="Email" type="email" size="40" />
-        <input placeholder="Phone" type="tel" size="40" />
-        <div class="form-attach">
-          <span class="form-attach-remark">
-            You can attach files or documents
-          </span>
-          <button class="form-attach-button">
-            <svg
-              width="13"
-              height="15"
-              viewBox="0 0 13 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+        <input
+          class="input-info"
+          placeholder="First name"
+          type="text"
+          size="40"
+        />
+        <input
+          class="input-info"
+          placeholder="Last name"
+          type="text"
+          size="40"
+        />
+        <input class="input-info" placeholder="Email" type="email" size="40" />
+        <input class="input-info" placeholder="Phone" type="tel" size="40" />
+
+        <form method="post" class="input-file-form">
+          <input
+            type="file"
+            name="file form"
+            id="input-file"
+            class="input input-file"
+            multiple
+          />
+
+          <div class="form-attach">
+            <span class="form-attach-remark">
+              You can attach files or documents
+            </span>
+            <label for="input-file" class="form-attach-button">
+              <svg
+                width="13"
+                height="15"
+                viewBox="0 0 13 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.49806 6.99066C0.24106 6.73121 0.24106 6.3112 0.49806 6.05176L5.14508 1.36058C6.94211 -0.453525 9.85521 -0.453525 11.6522 1.36058C13.4493 3.17401 13.4493 6.11479 11.6522 7.92889L5.61044 14.0281C4.32676 15.324 2.24579 15.324 0.962762 14.0281C-0.320921 12.7329 -0.320921 10.6321 0.962762 9.33625L6.07515 4.17528C6.84483 3.39762 8.09368 3.39762 8.86402 4.17528C9.6337 4.95294 9.6337 6.21299 8.86402 6.99066L5.14508 10.7443C4.88874 11.003 4.47268 11.003 4.21568 10.7443C3.95934 10.4848 3.95934 10.0648 4.21568 9.80603L7.93396 6.05176C8.19096 5.79298 8.19096 5.37296 7.93396 5.11352C7.67761 4.85474 7.26155 4.85474 7.00455 5.11352L1.89217 10.2751C1.12183 11.0521 1.12183 12.3129 1.89217 13.0899C2.66251 13.8675 3.9107 13.8675 4.68038 13.0899L10.7228 6.99066C12.0059 5.69477 12.0059 3.59403 10.7228 2.29881C9.43914 1.00293 7.35883 1.00293 6.07515 2.29881L1.42746 6.99066C1.17046 7.24943 0.754402 7.24943 0.49806 6.99066Z"
+                  fill="#323232"
+                />
+              </svg>
+              &nbsp;Attach image</label
             >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0.49806 6.99066C0.24106 6.73121 0.24106 6.3112 0.49806 6.05176L5.14508 1.36058C6.94211 -0.453525 9.85521 -0.453525 11.6522 1.36058C13.4493 3.17401 13.4493 6.11479 11.6522 7.92889L5.61044 14.0281C4.32676 15.324 2.24579 15.324 0.962762 14.0281C-0.320921 12.7329 -0.320921 10.6321 0.962762 9.33625L6.07515 4.17528C6.84483 3.39762 8.09368 3.39762 8.86402 4.17528C9.6337 4.95294 9.6337 6.21299 8.86402 6.99066L5.14508 10.7443C4.88874 11.003 4.47268 11.003 4.21568 10.7443C3.95934 10.4848 3.95934 10.0648 4.21568 9.80603L7.93396 6.05176C8.19096 5.79298 8.19096 5.37296 7.93396 5.11352C7.67761 4.85474 7.26155 4.85474 7.00455 5.11352L1.89217 10.2751C1.12183 11.0521 1.12183 12.3129 1.89217 13.0899C2.66251 13.8675 3.9107 13.8675 4.68038 13.0899L10.7228 6.99066C12.0059 5.69477 12.0059 3.59403 10.7228 2.29881C9.43914 1.00293 7.35883 1.00293 6.07515 2.29881L1.42746 6.99066C1.17046 7.24943 0.754402 7.24943 0.49806 6.99066Z"
-                fill="#323232"
-              />
-            </svg>
-            &nbsp;Attach image
-          </button>
-        </div>
-        <div class="button button-section">Send</div>
+          </div>
+          <input class="button button-section" type="submit" value="Send" />
+        </form>
+
+        <script>
+          let inputs = document.querySelectorAll(".input-file");
+          Array.prototype.forEach.call(inputs, function (input) {
+            input.addEventListener("change", function (e) {
+              let countFiles = "";
+              if (this.files && this.files.length >= 1)
+                countFiles = this.files.length;
+              if (countFiles) alert(countFiles + " files");
+            });
+          });
+        </script>
       </div>
     </div>
 
