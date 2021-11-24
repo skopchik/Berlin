@@ -1,10 +1,16 @@
 body {
+  font-size: 1.125rem;
   font-family: "Inter", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -36,7 +42,7 @@ a {
   color: #dbe4f1;
   text-decoration: none;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 
@@ -48,8 +54,6 @@ a {
 
 .promo-container {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -57,8 +61,8 @@ a {
   margin-bottom: 5px;
   color: white;
   font-weight: 700;
-  font-size: 46px;
-  line-height: 68px;
+  font-size: 2.875rem; /* делим размер из макета на 16 (размер шрифта по умолчанию) */
+  line-height: 1.478; /* делим размер Line-height по макету на размер шрифта по макету */
 }
 
 .promo-text {
@@ -67,8 +71,8 @@ a {
   margin-bottom: 27px;
   color: #dbe4f1;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 1.25rem;
+  line-height: 1.7;
 }
 
 .button {
@@ -79,8 +83,8 @@ a {
   border: none;
   border-radius: 3px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.1875;
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -97,8 +101,8 @@ a {
 .promo-remark {
   color: #dbe4f1;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 0.875rem;
+  line-height: 2;
 }
 
 .space-section {
@@ -146,22 +150,23 @@ a {
 }
 
 .column-title {
-  display: block;
-  text-align: center;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 1.375rem;
   margin-bottom: 24px;
+  line-height: 1.545;
 }
 
 .column-text {
-  display: block;
+  line-height: 1.888;
   max-width: 307px; /* ????????????????????????? */
-  text-align: center;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 34px;
   color: #323232;
+}
+
+.column-text,
+.column-title {
+  display: block;
+  text-align: center;
 }
 
 .section-container {
@@ -178,15 +183,14 @@ a {
 .title-section {
   margin-bottom: 14px;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 50px;
+  font-size: 2.375rem;
+  line-height: 1.316;
   color: #000000;
 }
 
 .text-section {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  line-height: 1.777;
   color: #323232;
   margin-bottom: 29px;
 }
@@ -199,9 +203,7 @@ a {
   margin-right: 120px;
 }
 
-.analytics-wrap {
-  display: flex;
-  flex-direction: column;
+.section-wrap {
   align-items: flex-start;
   max-width: 436px;
 }
@@ -216,8 +218,6 @@ a {
 
 .image-container {
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   max-width: 750px;
 }
@@ -261,8 +261,8 @@ a {
 
 .image-title {
   font-weight: 700;
-  font-size: 38px;
-  line-height: 50px;
+  font-size: 2.375rem;
+  line-height: 1.316;
   color: #ffffff;
   margin-bottom: 22px;
 }
@@ -270,8 +270,7 @@ a {
 .image-text {
   text-align: center;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  line-height: 1.777;
   color: #ffffff;
 }
 
@@ -283,8 +282,6 @@ a {
 }
 
 .plan-to-start-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   max-width: 750px;
   margin: 0 auto;
@@ -296,8 +293,7 @@ a {
 
 .plan-to-start-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  line-height: 1.777;
   text-align: center;
   color: #323232;
   margin-bottom: 60px;
@@ -333,15 +329,13 @@ a {
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   margin: 28px 65px 35px 45px;
 }
 
 .card-type {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 32px;
   text-transform: uppercase;
   color: #878b90;
@@ -356,27 +350,28 @@ a {
 .price-dollar {
   vertical-align: top;
   letter-spacing: -1.2px;
-  font-size: 30px;
-  line-height: 51px;
+  font-size: 1.875rem;
+  line-height: 1.7;
 }
 
 .price-number {
   letter-spacing: -0.3px;
-  font-size: 46px;
-  line-height: 60px;
+  font-size: 2.875rem;
+  line-height: 1.3;
 }
 
 .price-period {
   letter-spacing: -0.3px;
-  font-size: 17px;
-  line-height: 21px;
+  font-size: 1.0625rem;
+  line-height: 1.17;
+  letter-spacing: -0.3px;
 }
 
 .card-description {
   max-width: 240px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 23px;
+  font-size: 0.875rem;
+  line-height: 1.64;
   color: #323232;
   margin-bottom: 26px;
 }
@@ -389,9 +384,7 @@ a {
 
 .card-list-item {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  color: #000000;
+  line-height: 1.777;
 }
 
 .card-list-item:not(:last-child) {
@@ -409,8 +402,8 @@ a {
 
 .card-remark {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 0.875rem;
+  line-height: 2;
   color: #666666;
 }
 
@@ -418,8 +411,8 @@ a {
   display: block;
   text-align: center;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 1.75;
   color: #878b90;
   margin-bottom: 40px;
 }
@@ -444,8 +437,6 @@ a {
   padding-right: 56px;
   padding-bottom: 48px;
   border: 1px solid #e8e8ea;
-  display: flex;
-  flex-direction: column;
 }
 
 .testimonial:not(:last-child) {
@@ -460,16 +451,15 @@ a {
 
 .testimonial-quotes {
   font-weight: 400;
-  font-size: 98px;
-  line-height: 119px;
+  font-size: 6.125rem;
+  line-height: 1.214;
   color: #dbe4f1;
 }
 
 .testimonial-text {
   width: 274px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  line-height: 1.777;
   letter-spacing: -0.1px;
   margin-bottom: 40px;
 }
@@ -481,21 +471,20 @@ a {
 
 .testimonial-author-info {
   margin-left: 21px;
-  display: flex;
-  flex-direction: column;
   letter-spacing: -0.3px;
   color: #323232;
-  line-height: 28px;
 }
 
 .testimonial-author-name {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .testimonial-author-address {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 2;
 }
 
 .manage-your-team-section {
@@ -510,13 +499,11 @@ a {
 
 .manage-your-team-title {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-right: 61px;
 }
 
 .request-section {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: #f8fbfe;
   /*   background: url("../images/BG_3.jpg") bottom / cover no-repeat; */
@@ -528,8 +515,6 @@ a {
 }
 
 .request-section-form {
-  display: flex;
-  flex-direction: column;
   border: 1px solid #e8e8ea;
   box-shadow: 0px 22px 54px rgba(67, 87, 138, 0.29);
   border-radius: 10px;
@@ -542,7 +527,7 @@ a {
   padding: 15px;
   margin-bottom: 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #323232;
   border: 1px solid #e8e8ea;
   box-sizing: border-box;
@@ -579,7 +564,7 @@ a {
   border: none;
   background: #f2f5f8;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
   letter-spacing: -0.3px;
   color: #323232;
@@ -610,12 +595,7 @@ a {
   display: flex;
   margin-bottom: 86px;
   justify-content: space-evenly;
-  /*  justify-content: space-around; */
 }
-
-/* .footer-columns {
-  margin-right: 165px;
-} */
 
 .footer-menu-item:not(:last-child) {
   margin-bottom: 12px;
@@ -623,8 +603,8 @@ a {
 
 .footer-menu-link {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 34px;
+  font-size: 1rem;
+  line-height: 2.125;
   color: #f8fbfe;
 }
 
@@ -641,15 +621,15 @@ a {
   display: block;
   margin-bottom: 23px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 32px;
+  font-size: 0.875rem;
+  line-height: 2.286;
   color: #dbe4f1;
   opacity: 0.7;
 }
 
 .footer-info {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 18px;
   color: #dbe4f1;
   display: flex;
@@ -678,17 +658,17 @@ a {
 }
 
 .switches-container {
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 46px;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 3.75;
   letter-spacing: -0.3px;
   text-transform: uppercase;
   color: #0f3d33;
-  width: 250px;
-  height: 46px;
-  line-height: 45px;
   background: var(--switches-bg-color);
-  display: flex;
-  position: relative;
   border: 1px solid #e8e8ea;
   border-radius: 23px;
 }

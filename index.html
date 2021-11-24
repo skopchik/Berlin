@@ -32,7 +32,7 @@
         </ul>
       </div>
       <div class="header-promo">
-        <div class="promo-container">
+        <div class="promo-container flex-column">
           <span class="promo-title"> Manage your team, faster!</span>
           <span class="promo-text">
             Create custom landing pages with Berlin that convert more visitors
@@ -86,7 +86,7 @@
       <div class="analytics-images-wrap">
         <img src="./images/analytics.jpg" alt="" srcset="" />
       </div>
-      <div class="analytics-wrap">
+      <div class="section-wrap flex-column">
         <span class="analytics-title title-section">
           Manage everything faster in single place.
         </span>
@@ -100,7 +100,7 @@
     </div>
 
     <div class="activity-section section-container space-section">
-      <div class="activity-wrap analytics-wrap">
+      <div class="section-wrap flex-column">
         <span class="activity-title title-section"
           >Build better team work faster and better!</span
         >
@@ -117,7 +117,7 @@
     </div>
 
     <div class="image-section space-section">
-      <div class="image-container">
+      <div class="image-container flex-column">
         <button class="image-icon">
           <div class="play-circle"><div class="play-triangle"></div></div>
         </button>
@@ -131,7 +131,7 @@
     </div>
 
     <div class="plan-to-start-section space-section">
-      <div class="plan-to-start-container">
+      <div class="plan-to-start-container flex-column">
         <span class="plan-to-start-title title-section"
           >Choose a plan to start</span
         >
@@ -168,7 +168,7 @@
 
         <div class="plan-to-start-cards">
           <div class="plan-to-start-card">
-            <div class="card-container">
+            <div class="card-container flex-column">
               <span class="card-type"> Basic </span>
               <div class="card-price">
                 <span class="price-dollar">$</span>
@@ -198,7 +198,7 @@
           </div>
           <div class="plan-to-start-card">
             <div class="selected-card-line"></div>
-            <div class="card-container">
+            <div class="card-container flex-column">
               <span class="card-type"> Pro </span>
               <div class="card-price">
                 <span class="price-dollar">$</span>
@@ -253,7 +253,7 @@
     </div>
 
     <div class="testimonials-section">
-      <div class="testimonial">
+      <div class="testimonial flex-column">
         <span class="testimonial-quotes">”</span>
         <div class="testimonial-text">
           “You made it so simple. My new site is so much faster and easier to
@@ -266,7 +266,7 @@
             alt=""
             class="testimonial-author-image"
           />
-          <div class="testimonial-author-info">
+          <div class="testimonial-author-info flex-column">
             <span class="testimonial-author-name"> Cameron Anderson </span>
             <span class="testimonial-author-address"> From CrazyEggs.com </span>
           </div>
@@ -285,7 +285,7 @@
             alt=""
             class="testimonial-author-image"
           />
-          <div class="testimonial-author-info">
+          <div class="testimonial-author-info flex-column">
             <span class="testimonial-author-name">Ellen Austin </span>
             <span class="testimonial-author-address">
               From FashionGigs.net
@@ -302,7 +302,7 @@
         </div>
         <div class="testimonial-author">
           <img src="./images/testimonial_author_3.png" alt="" />
-          <div class="testimonial-author-info">
+          <div class="testimonial-author-info flex-column">
             <span class="testimonial-author-name"> Cameron Anderson </span>
             <span class="testimonial-author-address"> From Albarston.com </span>
           </div>
@@ -315,12 +315,12 @@
       <button class="button">Start free 14 days trial</button>
     </div>
 
-    <div class="request-section space-section">
+    <div class="request-section space-section flex-column">
       <span class="request-section-title title-section"
         >Please leave your request</span
       >
 
-      <div class="request-section-form">
+      <form method="post" class="request-section-form flex-column">
         <input
           class="input-info"
           placeholder="First name"
@@ -336,7 +336,7 @@
         <input class="input-info" placeholder="Email" type="email" size="40" />
         <input class="input-info" placeholder="Phone" type="tel" size="40" />
 
-        <form method="post" class="input-file-form">
+        <div class="input-file-form">
           <input
             type="file"
             name="file form"
@@ -368,20 +368,19 @@
             >
           </div>
           <input class="button button-section" type="submit" value="Send" />
-        </form>
-
-        <script>
-          let inputs = document.querySelectorAll(".input-file");
-          Array.prototype.forEach.call(inputs, function (input) {
-            input.addEventListener("change", function (e) {
-              let countFiles = "";
-              if (this.files && this.files.length >= 1)
-                countFiles = this.files.length;
-              if (countFiles) alert(countFiles + " files");
-            });
+        </div>
+      </form>
+      <script>
+        let inputs = document.querySelectorAll(".input-file");
+        Array.prototype.forEach.call(inputs, function (input) {
+          input.addEventListener("change", function (e) {
+            let countFiles = "";
+            if (this.files && this.files.length >= 1)
+              countFiles = this.files.length;
+            if (countFiles) alert(countFiles + " files");
           });
-        </script>
-      </div>
+        });
+      </script>
     </div>
 
     <div class="footer-container">
