@@ -313,7 +313,7 @@ a {
   position: relative;
   border-radius: 6px;
   background-color: #ffffff;
-  height: 515px;
+  /*   height: 515px; */
   width: 350px;
   margin: 40px 15px 85px;
 }
@@ -523,14 +523,12 @@ a {
 }
 
 .input-info {
-  min-width: 458px;
   padding: 15px;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 0.875rem;
   color: #323232;
   border: 1px solid #e8e8ea;
-  box-sizing: border-box;
   border-radius: 3px;
 }
 
@@ -548,6 +546,7 @@ a {
 }
 
 .form-attach-remark {
+  font-size: 0.875rem;
   letter-spacing: -0.7px;
 }
 
