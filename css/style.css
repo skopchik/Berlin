@@ -322,6 +322,10 @@ a {
 }
 
 .selected-card-line {
+  transition: all 0.7s;
+}
+
+.plan-to-start-card:hover .selected-card-line {
   border-radius: 6px;
   background-color: #50e3c2;
   height: 4px;
