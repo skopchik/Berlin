@@ -11,10 +11,10 @@ a {
 .flex-column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .header {
-  /* ОТСТУПОВ И УБРАТЬ ХЕИГХТ */
   height: 535px;
   background: url("../images/BG_1.jpg") center / cover no-repeat;
 }
@@ -25,17 +25,13 @@ a {
   justify-content: space-around;
 }
 
-.navbar-wrap {
-  width: inherit;
-  display: flex;
-}
-
 .navbar-menu {
   display: flex;
 }
 
-.navbar-menu-item:not(:last-child) {
-  margin-right: 50px;
+.navbar-menu-item {
+  margin-right: 1.56rem;
+  margin-left: 1.56rem;
 }
 
 .menu-link {
@@ -43,22 +39,19 @@ a {
   text-decoration: none;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 24px;
-}
-
-.header-promo {
-  margin: 0 auto;
-  margin-top: 80px;
-  max-width: 590px;
+  line-height: 1.5;
 }
 
 .promo-container {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 36.875rem;
   text-align: center;
   align-items: center;
 }
 
 .promo-title {
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
   color: white;
   font-weight: 700;
   font-size: 2.875rem; /* делим размер из макета на 16 (размер шрифта по умолчанию) */
@@ -79,7 +72,7 @@ a {
   margin-bottom: 11px;
   background-color: #50e3c2;
   color: #0f3d33;
-  padding: 15px 28.5px;
+  padding: 0.93rem 1.78rem;
   border: none;
   border-radius: 3px;
   font-weight: 600;
@@ -112,28 +105,34 @@ a {
 
 .columns-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.column {
+  margin: 5%;
+  max-width: 307px;
 }
 
 .column-icon {
   position: relative;
-  margin-left: 8rem; /* WTF????? */
-  margin-bottom: 2.7rem;
+  margin-left: 43%; /* SOS */
+  margin-bottom: 2.06rem;
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 50%;
   opacity: 0.06;
 }
 
 .small-circle {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 10px;
-  height: 10px;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 0.625rem;
+  height: 0.625rem;
   border-radius: 50%;
 }
 
@@ -152,13 +151,12 @@ a {
 .column-title {
   font-weight: 700;
   font-size: 1.375rem;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   line-height: 1.545;
 }
 
 .column-text {
   line-height: 1.888;
-  max-width: 307px; /* ????????????????????????? */
   font-weight: 400;
   color: #323232;
 }
@@ -171,6 +169,7 @@ a {
 
 .section-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -185,14 +184,13 @@ a {
   font-weight: 700;
   font-size: 2.375rem;
   line-height: 1.316;
-  color: #000000;
 }
 
 .text-section {
   font-weight: 400;
   line-height: 1.777;
   color: #323232;
-  margin-bottom: 29px;
+  margin-bottom: 1.875rem;
 }
 
 .bg-secondary {
@@ -200,12 +198,12 @@ a {
 }
 
 .analytics-images-wrap {
-  margin-right: 120px;
+  margin-right: 120px; /* хммммммм */
 }
 
 .section-wrap {
   align-items: flex-start;
-  max-width: 436px;
+  max-width: 27.25rem;
 }
 
 .activity-images-wrap {
@@ -218,8 +216,9 @@ a {
 
 .image-container {
   margin: 0 auto;
+  padding: 0 10%;
   align-items: center;
-  max-width: 750px;
+  max-width: 46.875rem;
 }
 
 .image-icon {
@@ -260,6 +259,7 @@ a {
 }
 
 .image-title {
+  text-align: center;
   font-weight: 700;
   font-size: 2.375rem;
   line-height: 1.316;
@@ -283,20 +283,23 @@ a {
 
 .plan-to-start-container {
   align-items: center;
-  max-width: 750px;
-  margin: 0 auto;
+  margin: auto 10%;
+}
+
+.plan-to-start-text-block {
+  max-width: 46.875rem;
+  text-align: center;
 }
 
 .plan-to-start-title {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .plan-to-start-text {
   font-weight: 400;
   line-height: 1.777;
-  text-align: center;
   color: #323232;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .plan-to-start-button {
@@ -307,14 +310,14 @@ a {
 
 .plan-to-start-cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .plan-to-start-card {
   position: relative;
   border-radius: 6px;
   background-color: #ffffff;
-  /*   height: 515px; */
-  width: 350px;
+  max-width: 21.875rem;
   margin: 40px 15px 85px;
 }
 
@@ -322,64 +325,62 @@ a {
   border-radius: 6px;
   background-color: #50e3c2;
   height: 4px;
-  width: inherit;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .card-container {
-  align-items: flex-start;
   margin: 28px 65px 35px 45px;
 }
 
 .card-type {
   font-weight: 700;
   font-size: 0.8125rem;
-  line-height: 32px;
+  line-height: 2.46;
   text-transform: uppercase;
   color: #878b90;
-  margin-bottom: 17px;
+  margin-bottom: 1.1rem;
 }
 
 .card-price {
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 
 .price-dollar {
   vertical-align: top;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.04rem; /* делим размер  letter-spacing по макету на размер шрифта */
   font-size: 1.875rem;
   line-height: 1.7;
 }
 
 .price-number {
-  letter-spacing: -0.3px;
+  letter-spacing: -0.007rem;
   font-size: 2.875rem;
   line-height: 1.3;
 }
 
 .price-period {
-  letter-spacing: -0.3px;
+  letter-spacing: -0.0176rem;
   font-size: 1.0625rem;
   line-height: 1.17;
-  letter-spacing: -0.3px;
 }
 
 .card-description {
-  max-width: 240px;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.64;
   color: #323232;
-  margin-bottom: 26px;
+  margin-bottom: 1.5625rem;
 }
 
 .card-list {
+  /* сделать адаптивную иконку?  */
   list-style-image: url(../images/marker.png);
-  margin-bottom: 31px;
-  padding-left: 25px;
+  margin-bottom: 1.9375rem;
+  padding-left: 1.5625rem;
 }
 
 .card-list-item {
@@ -388,7 +389,7 @@ a {
 }
 
 .card-list-item:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 0.5rem;
 }
 
 .basic-card-list-item {
@@ -396,7 +397,7 @@ a {
   opacity: 0.5;
 }
 
-.card-button {
+.card-container .button {
   margin-bottom: 14px;
 }
 
@@ -418,8 +419,8 @@ a {
 }
 
 .customer-logo {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 1.56rem;
+  margin-right: 1.56rem;
 }
 
 .customers-logo-wrap {
@@ -428,11 +429,13 @@ a {
 
 .testimonials-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 101px;
 }
 
 .testimonial {
+  max-width: 17rem;
   padding-left: 46px;
   padding-right: 56px;
   padding-bottom: 48px;
@@ -457,11 +460,10 @@ a {
 }
 
 .testimonial-text {
-  width: 274px;
   font-weight: 400;
   line-height: 1.777;
-  letter-spacing: -0.1px;
-  margin-bottom: 40px;
+  letter-spacing: -0.0056rem;
+  margin-bottom: 2.5rem;
 }
 
 .testimonial-author {
@@ -470,14 +472,14 @@ a {
 }
 
 .testimonial-author-info {
-  margin-left: 21px;
-  letter-spacing: -0.3px;
+  margin-left: 1.3rem;
   color: #323232;
 }
 
 .testimonial-author-name {
   font-weight: 700;
   font-size: 1rem;
+  letter-spacing: -0.01875rem;
   line-height: 1.75;
 }
 
@@ -485,6 +487,7 @@ a {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 2;
+  letter-spacing: -0.0214rem;
 }
 
 .manage-your-team-section {
@@ -500,7 +503,7 @@ a {
 .manage-your-team-title {
   font-weight: 700;
   font-size: 1.75rem;
-  margin-right: 61px;
+  margin-right: 3.8rem;
 }
 
 .request-section {
@@ -511,7 +514,7 @@ a {
 }
 
 .request-section-title {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .request-section-form {
@@ -523,8 +526,8 @@ a {
 }
 
 .input-info {
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 0.875rem;
+  margin-bottom: 1.25rem;
   font-weight: 400;
   font-size: 0.875rem;
   color: #323232;
@@ -547,25 +550,25 @@ a {
 
 .form-attach-remark {
   font-size: 0.875rem;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.05rem;
 }
 
 .request-section-form .button {
   width: 100%;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .form-attach-button {
   margin-left: 90px;
   display: inline-block;
-  padding: 9px 12px;
+  padding: 0.56rem 0.75rem;
   border: none;
   background: #f2f5f8;
   border-radius: 3px;
   font-size: 0.875rem;
   cursor: pointer;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.0214rem;
   color: #323232;
 }
 
@@ -575,6 +578,8 @@ a {
 }
 
 .form-attach-button svg {
+  width: 0.8125rem;
+  height: 0.875rem;
   vertical-align: bottom;
   display: inline-block;
 }
@@ -586,18 +591,18 @@ a {
 
 .footer-container {
   background: linear-gradient(315.06deg, #152649 5%, #4f525c 100%);
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 3.75rem;
+  padding-bottom: 2.5rem;
 }
 
 .footer-columns-wrap {
   display: flex;
-  margin-bottom: 86px;
+  margin-bottom: 5.3rem;
   justify-content: space-evenly;
 }
 
 .footer-menu-item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .footer-menu-link {
@@ -618,7 +623,7 @@ a {
 
 .footer-menu-title {
   display: block;
-  margin-bottom: 23px;
+  margin-bottom: 1.44rem;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 2.286;
@@ -629,7 +634,7 @@ a {
 .footer-info {
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 18px;
+  line-height: 1.5;
   color: #dbe4f1;
   display: flex;
   justify-content: space-evenly;
@@ -637,7 +642,7 @@ a {
 
 .footer-social-link:not(:last-child),
 .footer-policy-link:not(:last-child) {
-  margin-right: 19px;
+  margin-right: 1.19rem;
 }
 
 .footer-social-link img {
