@@ -28,8 +28,16 @@
 }
 
 @media all and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
   .analytics-images-wrap {
     margin: 0 auto;
+  }
+
+  .section-image {
+    max-width: 100%;
   }
 
   .section-wrap {
@@ -47,8 +55,12 @@
   }
   .plan-to-start-card {
     max-width: 30rem;
+    margin: 40px 40px;
   }
 }
 
 @media all and (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }
