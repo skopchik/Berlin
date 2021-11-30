@@ -1,0 +1,54 @@
+@media all and (max-width: 1150px) {
+  .testimonial {
+    margin: 1.5rem;
+  }
+
+  .testimonial:first-child,
+  .testimonial:last-child,
+  .testimonial:not(:last-child) {
+    border-radius: 10px;
+  }
+  .testimonial:not(:last-child) {
+    border-right: 1px solid #e8e8ea;
+  }
+}
+
+@media all and (max-width: 920px) {
+  .column {
+    margin-bottom: 3rem;
+  }
+
+  .plan-to-start-customers {
+    margin: 0 auto;
+  }
+
+  .customer-logo {
+    margin-bottom: 1.56rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .analytics-images-wrap {
+    margin: 0 auto;
+  }
+
+  .section-wrap {
+    align-items: stretch;
+  }
+
+  .space-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .plan-to-start-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .plan-to-start-card {
+    max-width: 30rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+}

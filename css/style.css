@@ -8,6 +8,11 @@ a {
   color: inherit;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -20,13 +25,18 @@ a {
 }
 
 .header-navbar {
-  display: flex;
   padding-top: 27px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  margin-left: 2rem;
 }
 
 .navbar-menu {
   display: flex;
+  margin-right: 2rem;
 }
 
 .navbar-menu-item {
@@ -106,17 +116,16 @@ a {
 .columns-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .column {
-  margin: 5%;
   max-width: 307px;
 }
 
 .column-icon {
   position: relative;
-  margin-left: 43%; /* SOS */
+  margin-left: 42%;
   margin-bottom: 2.06rem;
 }
 
@@ -275,10 +284,7 @@ a {
 }
 
 .plan-to-start-section {
-  background: #f8fbfe;
-  /*  background: url("../images/BG_3.jpg") top / cover no-repeat;
-  background-size: 100% 507px; */
-  /*   padding-top: 120px; */
+  background-image: linear-gradient(180deg, #f8fbfe 507px, #ffffff 507px);
 }
 
 .plan-to-start-container {
@@ -310,7 +316,6 @@ a {
 
 .plan-to-start-cards {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .plan-to-start-card {
@@ -319,6 +324,8 @@ a {
   background-color: #ffffff;
   max-width: 21.875rem;
   margin: 40px 15px 85px;
+  /*  box-shadow: 0px 42px 54px rgba(0, 0, 0, 0.0939481); */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.116536);
 }
 
 .selected-card-line {
@@ -495,26 +502,27 @@ a {
 }
 
 .manage-your-team-section {
+  margin: 0 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.manage-your-team-section .button {
-  margin-bottom: 0;
 }
 
 .manage-your-team-title {
   font-weight: 700;
   font-size: 1.75rem;
+  margin-left: 3.8rem;
   margin-right: 3.8rem;
 }
 
+.manage-your-team-title,
+.manage-your-team-section .button {
+  margin-bottom: 1rem;
+}
 .request-section {
+  background-image: linear-gradient(0deg, #f8fbfe 514px, #ffffff 514px);
   align-items: center;
-  background-color: #f8fbfe;
-  /*   background: url("../images/BG_3.jpg") bottom / cover no-repeat; */
-  /*   background-size: 100% 514px; */
 }
 
 .request-section-title {
@@ -602,7 +610,7 @@ a {
 .footer-columns-wrap {
   display: flex;
   margin-bottom: 5.3rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .footer-menu-item:not(:last-child) {
@@ -641,7 +649,7 @@ a {
   line-height: 1.5;
   color: #dbe4f1;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .footer-social-link:not(:last-child),
