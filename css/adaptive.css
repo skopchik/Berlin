@@ -57,20 +57,42 @@
     max-width: 30rem;
     margin: 40px 40px;
   }
+
+  .form-attach-button {
+    margin-left: 0;
+  }
 }
 
 @media all and (max-width: 480px) {
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar-logo {
+    margin-bottom: 1rem;
+  }
   .plan-to-start-card {
     margin: 20px auto;
   }
-  .request-section-form {
-    max-width: 100%;
-    /*  padding: 50px;
-   */
+
+  .testimonial {
+    padding-left: 34px;
+    padding-right: 44px;
+    padding-bottom: 36px;
   }
+
+  .request-section-title {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+
+  .request-section-form {
+    max-width: 80%;
+    padding: 20px;
+  }
+
   .input-info {
-    max-width: 100%;
-    /*   padding: 0.875rem;
-    margin-bottom: 1.25rem; */
+    max-width: 90%;
   }
 }

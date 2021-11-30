@@ -30,13 +30,14 @@ a {
   justify-content: space-between;
 }
 
-.navbar-logo {
+.navbar-logo,
+.navbar-menu {
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .navbar-menu {
   display: flex;
-  margin-right: 2rem;
 }
 
 .navbar-menu-item {
@@ -521,7 +522,7 @@ a {
 
 .manage-your-team-title,
 .manage-your-team-section .button {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .request-section {
   background-image: linear-gradient(0deg, #f8fbfe 514px, #ffffff 514px);
