@@ -663,6 +663,7 @@ a {
   line-height: 1.5;
   color: #dbe4f1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
