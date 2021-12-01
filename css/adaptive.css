@@ -57,17 +57,10 @@
     max-width: 30rem;
     margin: 40px 40px;
   }
-
-  .form-attach-remark {
-    text-align: center;
-    display: block;
-  }
-
-  .form-attach-button {
-    text-align: center;
-    width: 90%;
-    margin-left: 0;
-    margin-top: 1.25rem;
+  .request-section-form {
+    min-width: auto;
+    max-width: 80%;
+    padding: 20px;
   }
 }
 
@@ -99,12 +92,15 @@
     font-size: 2rem;
   }
 
-  .request-section-form {
-    max-width: 80%;
-    padding: 20px;
-  }
-
   .input-info {
     max-width: 90%;
+  }
+  .form-attach-remark {
+    padding-right: 1rem;
+  }
+  .form-attach-button {
+    text-align: center;
+    flex-grow: 1;
+    margin-top: 1.25rem;
   }
 }
