@@ -58,8 +58,16 @@
     margin: 40px 40px;
   }
 
+  .form-attach-remark {
+    text-align: center;
+    display: block;
+  }
+
   .form-attach-button {
+    text-align: center;
+    width: 90%;
     margin-left: 0;
+    margin-top: 1.25rem;
   }
 }
 
@@ -69,7 +77,11 @@
     justify-content: center;
   }
   .navbar-logo {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .promo-title {
+    font-size: 2rem;
   }
   .plan-to-start-card {
     margin: 20px auto;

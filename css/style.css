@@ -9,6 +9,7 @@ a {
 }
 
 .container {
+  padding: 0 20px;
   margin: 0 auto;
   max-width: 1150px;
 }
@@ -54,8 +55,7 @@ a {
 }
 
 .promo-container {
-  margin: 0 auto;
-  margin-top: 80px;
+  margin: 80px auto 0;
   max-width: 36.875rem;
   text-align: center;
   align-items: center;
@@ -208,16 +208,17 @@ a {
 }
 
 .analytics-images-wrap {
-  margin-right: 120px; /* хммммммм */
+  margin-right: 100px; /* хммммммм */
 }
 
 .section-wrap {
+  padding: 0 20px;
   align-items: flex-start;
   max-width: 27.25rem;
 }
 
 .activity-images-wrap {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 .image-section {
@@ -474,6 +475,7 @@ a {
 }
 
 .testimonial-text {
+  flex-grow: 1;
   font-weight: 400;
   line-height: 1.777;
   letter-spacing: -0.0056rem;
@@ -577,7 +579,7 @@ a {
 }
 
 .form-attach-button {
-  margin-left: 90px;
+  margin-left: 125px;
   display: inline-block;
   padding: 0.56rem 0.75rem;
   border: none;
@@ -614,6 +616,7 @@ a {
 
 .footer-columns-wrap {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 5.3rem;
   justify-content: space-around;
 }
