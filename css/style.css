@@ -37,7 +37,8 @@ a {
   margin-right: 2rem;
 }
 
-.navbar-menu {
+.navbar-menu,
+.subscription-cards {
   display: flex;
 }
 
@@ -207,8 +208,8 @@ a {
   background: #f8fbfe;
 }
 
-.analytics-images-wrap {
-  margin-right: 100px; /* хммммммм */
+.images-wrap-1 {
+  margin-right: 100px;
 }
 
 .section-wrap {
@@ -217,7 +218,7 @@ a {
   max-width: 27.25rem;
 }
 
-.activity-images-wrap {
+.images-wrap-2 {
   margin-left: 40px;
 }
 
@@ -285,42 +286,32 @@ a {
   color: #ffffff;
 }
 
-.plan-to-start-section {
+.subscription-section {
   background-image: linear-gradient(180deg, #f8fbfe 507px, #ffffff 507px);
 }
 
-.plan-to-start-container {
+.subscription-container {
   align-items: center;
   margin: auto 10%;
 }
 
-.plan-to-start-text-block {
+.subscription-text-block {
   max-width: 46.875rem;
   text-align: center;
 }
 
-.plan-to-start-title {
+.subscription-title {
   margin-bottom: 1.25rem;
 }
 
-.plan-to-start-text {
+.subscription-text {
   font-weight: 400;
   line-height: 1.777;
   color: #323232;
   margin-bottom: 3.75rem;
 }
 
-.plan-to-start-button {
-  cursor: pointer;
-  border: none;
-  background-color: inherit;
-}
-
-.plan-to-start-cards {
-  display: flex;
-}
-
-.plan-to-start-card {
+.subscription-card {
   position: relative;
   border-radius: 6px;
   background-color: #ffffff;
@@ -334,7 +325,7 @@ a {
   transition: all 0.7s;
 }
 
-.plan-to-start-card:hover .selected-card-line {
+.subscription-card:hover .selected-card-line {
   border-radius: 6px;
   background-color: #50e3c2;
   height: 4px;
@@ -390,7 +381,6 @@ a {
 }
 
 .card-list {
-  /* сделать адаптивную иконку?  */
   list-style-image: url(../images/marker.png);
   margin-bottom: 1.9375rem;
   padding-left: 1.5625rem;
@@ -419,6 +409,10 @@ a {
   font-size: 0.875rem;
   line-height: 2;
   color: #666666;
+}
+
+.customers-section {
+  margin: 0 auto;
 }
 
 .customers-text {
@@ -506,7 +500,7 @@ a {
   letter-spacing: -0.0214rem;
 }
 
-.manage-your-team-section {
+.slogan-section {
   margin: 0 1.5rem;
   display: flex;
   flex-wrap: wrap;
@@ -514,7 +508,7 @@ a {
   align-items: center;
 }
 
-.manage-your-team-title {
+.slogan-title {
   font-weight: 700;
   font-size: 1.75rem;
   margin-left: 3.8rem;
@@ -522,10 +516,11 @@ a {
   text-align: center;
 }
 
-.manage-your-team-title,
-.manage-your-team-section .button {
+.slogan-title,
+.slogan-section .button {
   margin-bottom: 2rem;
 }
+
 .request-section {
   background-image: linear-gradient(0deg, #f8fbfe 514px, #ffffff 514px);
   align-items: center;

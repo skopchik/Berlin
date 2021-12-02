@@ -18,10 +18,6 @@
     margin-bottom: 3rem;
   }
 
-  .plan-to-start-customers {
-    margin: 0 auto;
-  }
-
   .customer-logo {
     margin-bottom: 1.56rem;
   }
@@ -32,7 +28,8 @@
     font-size: 14px;
   }
 
-  .analytics-images-wrap {
+  .images-wrap-1,
+  .images-wrap-2 {
     margin: 0 auto;
   }
 
@@ -49,14 +46,16 @@
     padding-bottom: 60px;
   }
 
-  .plan-to-start-cards {
+  .subscription-cards {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .plan-to-start-card {
+
+  .subscription-card {
     max-width: 30rem;
     margin: 40px 40px;
   }
+
   .request-section-form {
     min-width: auto;
     max-width: 80%;
@@ -76,8 +75,13 @@
   .promo-title {
     font-size: 2rem;
   }
-  .plan-to-start-card {
+
+  .subscription-card {
     margin: 20px auto;
+  }
+
+  .card-container {
+    margin: 28px 45px 35px 25px;
   }
 
   .testimonial {
@@ -95,9 +99,11 @@
   .input-info {
     max-width: 90%;
   }
+
   .form-attach-remark {
     padding-right: 1rem;
   }
+
   .form-attach-button {
     text-align: center;
     flex-grow: 1;
