@@ -21,12 +21,13 @@ a {
 }
 
 .header {
-  height: 535px;
+  padding-bottom: 7.5rem;
   background: url("../images/BG_1.jpg") center / cover no-repeat;
 }
 
 .header-navbar {
-  padding-top: 27px;
+  padding-top: 2.375rem;
+  padding-bottom: 0.875rem;
   display: flex;
   justify-content: space-between;
 }
@@ -71,9 +72,7 @@ a {
 }
 
 .promo-text {
-  margin-right: 11px;
-  margin-left: 11px;
-  margin-bottom: 27px;
+  margin: 0 0.6875rem 1.6875rem 0.6875rem; /* сверху | справа | снизу | слева */
   color: #dbe4f1;
   font-weight: 400;
   font-size: 1.25rem;
@@ -81,7 +80,7 @@ a {
 }
 
 .button {
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
   background-color: #50e3c2;
   color: #0f3d33;
   padding: 0.93rem 1.78rem;
@@ -111,50 +110,52 @@ a {
 }
 
 .space-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
 }
 
 .columns-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .column {
-  max-width: 307px;
+  flex: 0 1 26%; /*  flex-grow: 0; flex-shrink: 1; flex-basis: 26%; */
+  align-items: center;
 }
 
-.column-icon {
-  position: relative;
-  margin-left: 42%;
-  margin-bottom: 2.06rem;
-}
-
-.circle {
+.column::before {
+  content: "";
+  display: block;
   width: 3.125rem;
   height: 3.125rem;
   border-radius: 50%;
-  opacity: 0.06;
+  /* opacity: 0.06; */
+  margin-bottom: 2.06rem;
+  background-color: red;
 }
 
-.small-circle {
-  position: absolute;
-  top: 1.25rem;
-  left: 1.25rem;
+.column-title::before {
+  /*   position: absolute; */
+  /*   top: 1.25rem;
+       left: 1.25rem; */
+  content: "";
+  display: block;
   width: 0.625rem;
   height: 0.625rem;
   border-radius: 50%;
+  background-color: black;
+  /*  margin: 0 auto; */
+  /*  margin-bottom: 2.06rem; */
 }
 
 .circle-color-1 {
   background-color: rgba(252, 92, 101, 1);
 }
-
 .circle-color-2 {
   background-color: rgba(80, 227, 194, 1);
 }
-
 .circle-color-3 {
   background-color: rgba(166, 101, 251, 1);
 }
@@ -174,7 +175,6 @@ a {
 
 .column-text,
 .column-title {
-  display: block;
   text-align: center;
 }
 
@@ -191,7 +191,7 @@ a {
 }
 
 .title-section {
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
   font-weight: 700;
   font-size: 2.375rem;
   line-height: 1.316;
@@ -237,7 +237,7 @@ a {
   cursor: pointer;
   border: none;
   background-color: inherit;
-  margin-bottom: 54px;
+  margin-bottom: 3.375rem;
   transition: all 0.4s ease;
 }
 
@@ -246,6 +246,7 @@ a {
 }
 
 .play-circle {
+  display: block;
   transition: all 0.4s ease;
   position: relative;
   width: 96px;
@@ -276,7 +277,7 @@ a {
   font-size: 2.375rem;
   line-height: 1.316;
   color: #ffffff;
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 .image-text {
@@ -287,7 +288,11 @@ a {
 }
 
 .subscription-section {
-  background-image: linear-gradient(180deg, #f8fbfe 507px, #ffffff 507px);
+  background-image: linear-gradient(
+    180deg,
+    #f8fbfe 31.6875rem,
+    #ffffff 31.6875rem
+  );
 }
 
 .subscription-container {
@@ -401,7 +406,7 @@ a {
 }
 
 .card-container .button {
-  margin-bottom: 14px;
+  margin-bottom: 0.875rem;
 }
 
 .card-remark {
@@ -416,7 +421,6 @@ a {
 }
 
 .customers-text {
-  display: block;
   text-align: center;
   font-weight: 400;
   font-size: 1rem;
@@ -516,13 +520,12 @@ a {
   text-align: center;
 }
 
-.slogan-title,
 .slogan-section .button {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 .request-section {
-  background-image: linear-gradient(0deg, #f8fbfe 514px, #ffffff 514px);
+  background-image: linear-gradient(0deg, #f8fbfe 32.125rem, #ffffff 32.125rem);
   align-items: center;
 }
 
@@ -686,17 +689,17 @@ a {
 .switches-container {
   display: flex;
   position: relative;
-  width: 250px;
-  height: 46px;
+  width: 15.625rem;
+  height: 2.875rem;
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 3.75;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.01875rem;
   text-transform: uppercase;
   color: #0f3d33;
   background: var(--switches-bg-color);
   border: 1px solid #e8e8ea;
-  border-radius: 23px;
+  border-radius: 1.4375rem;
 }
 
 .switches-container input {
@@ -734,7 +737,6 @@ a {
   width: 100%;
   text-align: center;
   opacity: 0;
-  display: block;
   color: var(--switch-text-color);
   transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 0.125s;
   will-change: opacity;
