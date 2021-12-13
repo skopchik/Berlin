@@ -14,10 +14,22 @@
 }
 
 @media all and (max-width: 920px) {
-  .column {
-    margin-bottom: 3rem;
+  .desktop-text {
+    display: none;
   }
 
+  .column {
+    margin-bottom: 3rem;
+    flex: 0 1 45%;
+  }
+  .section-wrap {
+    flex-basis: auto;
+  }
+
+  .slogan-title,
+  .slogan-section .button {
+    margin-bottom: 2rem;
+  }
   .customer-logo {
     margin-bottom: 1.56rem;
   }
@@ -28,9 +40,14 @@
     font-size: 14px;
   }
 
-  .images-wrap-1,
-  .images-wrap-2 {
-    margin: 0 auto;
+  .column {
+    flex: 0 1 100%;
+  }
+
+  .column-text,
+  .image-text,
+  .subscription-text {
+    padding: 0 2rem;
   }
 
   .section-image {
@@ -77,6 +94,7 @@
   }
 
   .subscription-card {
+    max-width: 20rem;
     margin: 20px auto;
   }
 
@@ -108,5 +126,11 @@
     text-align: center;
     flex-grow: 1;
     margin-top: 1.25rem;
+  }
+
+  .authors-rights,
+  .footer-policy,
+  .footer-socials {
+    padding-bottom: 1rem;
   }
 }

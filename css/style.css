@@ -9,7 +9,6 @@ a {
 }
 
 .container {
-  padding: 0 20px;
   margin: 0 auto;
   max-width: 1150px;
 }
@@ -41,6 +40,7 @@ a {
 .navbar-menu,
 .subscription-cards {
   display: flex;
+  justify-content: center;
 }
 
 .navbar-menu-item {
@@ -57,7 +57,7 @@ a {
 }
 
 .promo-container {
-  margin: 80px auto 0;
+  margin: 5rem auto 0;
   max-width: 36.875rem;
   text-align: center;
   align-items: center;
@@ -117,7 +117,7 @@ a {
 .columns-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .column {
@@ -128,36 +128,25 @@ a {
 .column::before {
   content: "";
   display: block;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  /* opacity: 0.06; */
+  outline-offset: -25px;
+  outline: 5px solid;
   margin-bottom: 2.06rem;
-  background-color: red;
 }
 
-.column-title::before {
-  /*   position: absolute; */
-  /*   top: 1.25rem;
-       left: 1.25rem; */
-  content: "";
-  display: block;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-radius: 50%;
-  background-color: black;
-  /*  margin: 0 auto; */
-  /*  margin-bottom: 2.06rem; */
+.column.circle-color-1::before {
+  background-color: rgba(252, 92, 101, 0.06);
+  outline-color: rgba(252, 92, 101, 1);
 }
-
-.circle-color-1 {
-  background-color: rgba(252, 92, 101, 1);
+.column.circle-color-2::before {
+  background-color: rgba(80, 227, 194, 0.06);
+  outline-color: rgba(80, 227, 194, 1);
 }
-.circle-color-2 {
-  background-color: rgba(80, 227, 194, 1);
-}
-.circle-color-3 {
-  background-color: rgba(166, 101, 251, 1);
+.column.circle-color-3::before {
+  background-color: rgba(166, 101, 251, 0.06);
+  outline-color: rgba(166, 101, 251, 1);
 }
 
 .column-title {
@@ -181,7 +170,7 @@ a {
 .section-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -208,37 +197,23 @@ a {
   background: #f8fbfe;
 }
 
-.images-wrap-1 {
-  margin-right: 100px;
-}
-
 .section-wrap {
-  padding: 0 20px;
-  align-items: flex-start;
-  max-width: 27.25rem;
-}
-
-.images-wrap-2 {
-  margin-left: 40px;
+  align-items: flex-start; /* для выравнивания кнопки */
+  flex-basis: 32%;
+  padding: 0 2rem;
 }
 
 .image-section {
   background: url("../images/BG_2.jpg") center / cover no-repeat;
 }
 
-.image-container {
-  margin: 0 auto;
-  padding: 0 10%;
-  align-items: center;
-  max-width: 46.875rem;
-}
-
 .image-icon {
   cursor: pointer;
   border: none;
   background-color: inherit;
-  margin-bottom: 3.375rem;
   transition: all 0.4s ease;
+  display: block;
+  margin: 0 auto 3.375rem; /* сверху | горизонтально | снизу */
 }
 
 .image-icon:hover {
@@ -272,18 +247,20 @@ a {
 }
 
 .image-title {
-  text-align: center;
   font-weight: 700;
   font-size: 2.375rem;
   line-height: 1.316;
-  color: #ffffff;
   margin-bottom: 1.375rem;
 }
 
 .image-text {
-  text-align: center;
   font-weight: 400;
   line-height: 1.777;
+}
+
+.image-title,
+.image-text {
+  text-align: center;
   color: #ffffff;
 }
 
@@ -295,13 +272,10 @@ a {
   );
 }
 
-.subscription-container {
-  align-items: center;
-  margin: auto 10%;
-}
-
-.subscription-text-block {
-  max-width: 46.875rem;
+.subscription-text-block,
+.customers-logo-wrap,
+.customers-text,
+.request-section-title {
   text-align: center;
 }
 
@@ -322,7 +296,6 @@ a {
   background-color: #ffffff;
   max-width: 21.875rem;
   margin: 40px 15px 85px;
-  /*  box-shadow: 0px 42px 54px rgba(0, 0, 0, 0.0939481); */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.116536);
 }
 
@@ -416,12 +389,7 @@ a {
   color: #666666;
 }
 
-.customers-section {
-  margin: 0 auto;
-}
-
 .customers-text {
-  text-align: center;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.75;
@@ -436,15 +404,11 @@ a {
   margin-right: 1.56rem;
 }
 
-.customers-logo-wrap {
-  text-align: center;
-}
-
 .testimonials-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 101px;
+  margin-bottom: 100px;
 }
 
 .testimonial {
@@ -452,6 +416,7 @@ a {
   padding-left: 46px;
   padding-right: 56px;
   padding-bottom: 48px;
+  font-weight: 400;
   border: 1px solid #e8e8ea;
 }
 
@@ -466,7 +431,6 @@ a {
 }
 
 .testimonial-quotes {
-  font-weight: 400;
   font-size: 6.125rem;
   line-height: 1.214;
   color: #dbe4f1;
@@ -474,7 +438,6 @@ a {
 
 .testimonial-text {
   flex-grow: 1;
-  font-weight: 400;
   line-height: 1.777;
   letter-spacing: -0.0056rem;
   margin-bottom: 2.5rem;
@@ -498,7 +461,6 @@ a {
 }
 
 .testimonial-author-address {
-  font-weight: 400;
   font-size: 0.875rem;
   line-height: 2;
   letter-spacing: -0.0214rem;
@@ -531,7 +493,6 @@ a {
 
 .request-section-title {
   margin-bottom: 1.875rem;
-  text-align: center;
 }
 
 .request-section-form {
@@ -679,6 +640,7 @@ a {
 }
 
 /* TOGGLE BUTTON  START */
+
 :root {
   --switches-bg-color: #f8fbfe;
   --switches-label-color: #0f3d33;
@@ -700,6 +662,7 @@ a {
   background: var(--switches-bg-color);
   border: 1px solid #e8e8ea;
   border-radius: 1.4375rem;
+  margin: 0 auto;
 }
 
 .switches-container input {
