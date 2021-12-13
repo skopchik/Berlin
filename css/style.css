@@ -430,7 +430,9 @@ a {
   border-radius: 0 10px 10px 0;
 }
 
-.testimonial-quotes {
+.testimonial-text::before {
+  content: "”";
+  display: block;
   font-size: 6.125rem;
   line-height: 1.214;
   color: #dbe4f1;
