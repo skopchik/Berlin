@@ -150,6 +150,7 @@ a {
 }
 
 .column-title {
+  flex-grow: 1;
   font-weight: 700;
   font-size: 1.375rem;
   margin-bottom: 1.5rem;
